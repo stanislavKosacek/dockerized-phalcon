@@ -30,6 +30,13 @@ and then:
 make run-dev
 ```
 
+## Composer
+To install composer package run for example
+```
+make composer require guzzlehttp/guzzle
+```
+Installed packages will be registered automatically
+
 ## Use node.js + Webpack
 
 Base webpack configuration is located in

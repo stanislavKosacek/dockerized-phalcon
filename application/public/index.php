@@ -9,7 +9,7 @@ use Phalcon\Mvc\View;
 
 define('BASE_PATH', dirname(__DIR__));
 define('APP_PATH', BASE_PATH . '/app');
-
+require APP_PATH . "/../vendor/autoload.php";
 // Register an autoloader
 $loader = new Loader();
 $loader->registerDirs(
@@ -18,7 +18,6 @@ $loader->registerDirs(
         APP_PATH . '/models/',
     ]
 )->register();
-$loader->registerFiles([APP_PATH . '/vendor/autoload.php']);
 
 // Create a DI
 $di = new FactoryDefault();
